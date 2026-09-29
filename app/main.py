@@ -2,7 +2,8 @@ import requests
 from fastapi import FastAPI, HTTPException
 
 from .models import Personagem
-from .pokeapi import PersonagemNaoEncontrado, buscar_personagem
+from .exceptions import PersonagemNaoEncontrado
+from .pokeapi import buscar_personagem
 
 app = FastAPI()
 
