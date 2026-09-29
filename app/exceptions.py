@@ -1,0 +1,2 @@
+class PersonagemNaoEncontrado(Exception):
+    pass

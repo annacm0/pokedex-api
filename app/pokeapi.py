@@ -1,11 +1,6 @@
 import requests
-
 from .models import Personagem, montar_personagem
-
-
-class PersonagemNaoEncontrado(Exception):
-    pass
-
+from .exceptions import PersonagemNaoEncontrado
 
 def buscar_personagem(nome: str) -> Personagem:
     resposta = requests.get(
