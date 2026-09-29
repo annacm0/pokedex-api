@@ -1,26 +1,28 @@
 # Pokédex API
 
-API REST desenvolvida em **Python com FastAPI** para consulta de personagens da franquia Pokémon por meio da [PokéAPI](https://pokeapi.co/).
+API REST desenvolvida em **Python com FastAPI** para consulta de Pokémon por meio da [PokéAPI](https://pokeapi.co/).
 
-Projeto desenvolvido durante o desafio **#7DaysOfCode — Vibe Coding com Claude Code**, da Alura, com foco na construção de uma API, consumo de serviço externo, tratamento de erros, testes automatizados e publicação.
+Projeto desenvolvido durante o desafio **#7DaysOfCode — Vibe Coding com Claude Code**, da Alura, com foco na construção de uma API, consumo de serviço externo, tratamento de erros, testes automatizados e publicação em ambiente de nuvem.
 
 ## 🌐 API publicada
 
 **API:**
-https://pokedex-api-8510.onrender.com
+
+https://pokedex-api-85l0.onrender.com
 
 **Documentação interativa (Swagger):**
-https://pokedex-api-8510.onrender.com/docs
+
+https://pokedex-api-85l0.onrender.com/docs
 
 ### Exemplo
 
 ```text
-https://pokedex-api-8510.onrender.com/personagens/pikachu
+https://pokedex-api-85l0.onrender.com/personagens/pikachu
 ```
 
 ## 🚀 Sobre o projeto
 
-A API recebe o nome de um Pokémon e consulta a PokéAPI para retornar informações sobre o personagem.
+A API recebe o nome de um Pokémon, consulta a PokéAPI e retorna informações selecionadas sobre ele.
 
 Os dados disponibilizados são:
 
@@ -77,7 +79,7 @@ pokedex-api/
 
 ### Organização
 
-* `main.py` — define o endpoint da API e o tratamento das exceções.
+* `main.py` — define os endpoints da API e o tratamento das exceções.
 * `models.py` — define o modelo `Personagem` e transforma os dados recebidos da PokéAPI.
 * `pokeapi.py` — realiza a comunicação com a PokéAPI.
 * `exceptions.py` — contém a exceção personalizada `PersonagemNaoEncontrado`.
@@ -91,6 +93,7 @@ pokedex-api/
 
 ```bash
 git clone https://github.com/annacm0/pokedex-api.git
+
 cd pokedex-api
 ```
 
@@ -132,7 +135,15 @@ A documentação interativa do FastAPI estará disponível em:
 http://127.0.0.1:8000/docs
 ```
 
-## 🔎 Endpoint
+## 🔎 Endpoints
+
+### Página inicial
+
+```http
+GET /
+```
+
+Retorna uma mensagem de boas-vindas e o caminho da documentação da API.
 
 ### Buscar personagem
 
@@ -149,7 +160,7 @@ GET /personagens/pikachu
 Ou diretamente na API publicada:
 
 ```text
-https://pokedex-api-8510.onrender.com/personagens/pikachu
+https://pokedex-api-85l0.onrender.com/personagens/pikachu
 ```
 
 ### Resposta de sucesso
@@ -167,7 +178,7 @@ https://pokedex-api-8510.onrender.com/personagens/pikachu
 
 ### Personagem não encontrado
 
-Quando o personagem informado não existe:
+Quando o Pokémon informado não existe:
 
 **404 Not Found**
 
@@ -221,13 +232,13 @@ Procfile
 render.yaml
 ```
 
-A API está disponível em:
+**API publicada:**
 
-**https://pokedex-api-8510.onrender.com**
+https://pokedex-api-85l0.onrender.com
 
-A documentação interativa pode ser acessada em:
+**Documentação interativa:**
 
-**https://pokedex-api-8510.onrender.com/docs**
+https://pokedex-api-85l0.onrender.com/docs
 
 > A instância gratuita do Render pode entrar em estado de inatividade após um período sem requisições. Nesse caso, a primeira requisição pode levar alguns segundos para responder.
 
@@ -248,6 +259,7 @@ Durante o desenvolvimento foram praticados:
 * preparação e configuração para deploy;
 * publicação de uma API em ambiente de nuvem.
 
----
 
-Desenvolvido por **Anna Carolina** durante o desafio **#7DaysOfCode — Vibe Coding com Claude Code**, da Alura.
+
+
+
