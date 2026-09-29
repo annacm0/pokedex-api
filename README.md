@@ -2,8 +2,6 @@
 
 API REST desenvolvida em **Python com FastAPI** para consulta de Pokémon por meio da [PokéAPI](https://pokeapi.co/).
 
-Projeto desenvolvido durante o desafio **#7DaysOfCode — Vibe Coding com Claude Code**, da Alura, com foco na construção de uma API, consumo de serviço externo, tratamento de erros, testes automatizados e publicação em ambiente de nuvem.
-
 ## 🌐 API publicada
 
 **API:**
@@ -259,6 +257,9 @@ Durante o desenvolvimento foram praticados:
 * preparação e configuração para deploy;
 * publicação de uma API em ambiente de nuvem.
 
+---
+
+Projeto desenvolvido durante o desafio **#7DaysOfCode — Vibe Coding com Claude Code**, da Alura, com foco na construção de uma API, consumo de serviço externo, tratamento de erros, testes automatizados e publicação em ambiente de nuvem.
 
 
 
